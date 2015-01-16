@@ -1,0 +1,140 @@
+/** Mixins **/
+/** Colors **/
+/** Fonts **/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@font-face {
+  font-family: 'Josefin Bold';
+  src: url("JosefinSans-Bold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Cinzel Regular';
+  src: url("Cinzel-Regular.ttf") format("truetype"); }
+@media only screen and (max-width: 1100px) {
+  .contain {
+    width: 95%;
+    padding-left: 2.5%;
+    padding-right: 2.5%; } }
+@media only screen and (max-width: 900px) {
+  header.top nav h1 a.small {
+    width: 50px; }
+
+  .project_info {
+    width: 100%; }
+    .project_info p {
+      padding: 0;
+      position: relative;
+      margin: 0 auto 0;
+      max-width: 600px;
+      margin-bottom: 25px; }
+      .project_info p.hidden {
+        max-height: 25px; }
+    .project_info img.mobile {
+      max-width: 300px;
+      width: auto; }
+
+  .project_photo {
+    width: 100%; }
+
+  #about #me {
+    float: none;
+    max-width: 300px;
+    margin: 0px auto;
+    width: 95%;
+    display: block;
+    margin-top: 50px; }
+  #about .long {
+    width: 100%;
+    float: none;
+    padding-right: 0;
+    max-width: 600px;
+    margin: 0px auto; } }
+@media only screen and (max-width: 700px) {
+  header.top nav {
+    text-align: center; }
+    header.top nav h1 {
+      display: block;
+      margin-bottom: 25px; }
+      header.top nav h1 a.sticky {
+        position: static; }
+      header.top nav h1 a.small {
+        position: fixed;
+        text-align: left; }
+    header.top nav ul {
+      position: static;
+      display: inline-block;
+      direction: rtl;
+      margin: 0px auto; }
+      header.top nav ul li {
+        float: none;
+        display: inline-block; }
+        header.top nav ul li:last-child {
+          margin-left: 0; }
+        header.top nav ul li:hover {
+          transform: none; }
+          header.top nav ul li:hover a {
+            padding: 10px 0 10px;
+            color: #6AA515; }
+
+  #contact {
+    padding-bottom: 75px; } }
+@media only screen and (max-width: 530px) {
+  #contact_buttons:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  #contact_buttons #email {
+    float: right;
+    width: 100%; }
+    #contact_buttons #email p {
+      display: none; }
+  #contact_buttons #phone, #contact_buttons #linkedin {
+    clear: both;
+    margin: 0 20px; } }
+@media only screen and (max-width: 480px) {
+  .project_title:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none; }
+  .project_title a {
+    cursor: default; }
+
+  .project_container .controls .mobile {
+    display: none; }
+
+  .project_info .mobile_project_photo {
+    display: block; }
+    .project_info .mobile_project_photo img {
+      margin-bottom: 10px; }
+
+  .project_photo img.display {
+    display: none !important; }
+
+  .icons div {
+    margin: 0;
+    width: 49%;
+    margin-bottom: 15px; }
+    .icons div:hover img {
+      -webkit-transform: none;
+      -ms-transform: none;
+      -moz-transform: none;
+      -o-transform: none;
+      transform: none; }
+    .icons div p {
+      position: relative;
+      margin-bottom: 2px; }
+
+  #contact_buttons #phone, #contact_buttons #linkedin {
+    margin: 0px auto 0px;
+    width: 45%; } }
+@media only screen and (max-width: 375px) {
+  header.top nav ul {
+    right: 0;
+    left: 0;
+    width: 100%; }
+    header.top nav ul li {
+      margin-left: 5%;
+      width: auto; }
+
+  .section_text .intro {
+    padding: 50px 5%; } }
