@@ -70,8 +70,8 @@ a {
   color: #354242;
   cursor: default;
   display: block;
-  -webkit-transition: .5s;
-          transition: .5s; }
+  -webkit-transition: color .5s;
+          transition: color .5s; }
 
 .brand-name {
   display: inline;
@@ -130,7 +130,6 @@ a {
   top: 0;
   bottom: 0;
   right: 0;
-  height: 100%;
   font-size: 1.5em; }
   .page-nav li {
     float: right;
