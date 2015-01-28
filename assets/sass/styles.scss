@@ -44,7 +44,7 @@ p {
 	margin-bottom: 1.75em;
 }
 
-p a {
+p a, li a {
 	text-decoration: none;
 	color: $dark-green;
 	border-bottom: 1px dotted $dark-green;
@@ -55,7 +55,7 @@ p a {
 		border-bottom: 1px solid $dark-green;
 	}
 }
-header {
+header.header {
 	font-family: $headings;
 }
 a {
@@ -169,6 +169,7 @@ a {
 		&:hover {
 			a {
 				line-height: 60px;
+				border-bottom: 0;
 			}
 		}
 		a {
@@ -177,6 +178,7 @@ a {
 			display: block;
 			line-height: 50px;
 			transition: .5s;
+			border-bottom: 0;
 		}
 	}
 }
@@ -187,7 +189,8 @@ a {
 section.main {
 	clear: both;
 	text-align: center;
-	header{
+	header, .header{
+		display: block;
 		padding-top: 30px;
 		padding-bottom: 25px;
 		background: $dark-blue;
@@ -201,7 +204,6 @@ section.main {
 			padding: 5px 15px 10px;
 			border-bottom: 5px solid $dark-green;
 			transition: .5s;
-			cursor: default;
 
 			&:hover {
 				padding: 5px 25px 10px;
@@ -211,6 +213,21 @@ section.main {
 }
 .intro {
 	margin-bottom: 0;
+	a {
+		border-bottom: none;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+	img {
+		width: 1.2em;
+		vertical-align: middle;
+		border-radius: 50%;
+		&:hover {
+			box-shadow: 0px 0px 2px 2px $dark-green;
+			transition: .5s;
+		}
+	}
 }
 
 .section-text {
@@ -245,13 +262,82 @@ section.main {
 		margin: auto;
 		margin-top: 15px;
 		max-width: 875px;
+		text-align: left;
 	}
 }
 #contact {
 	padding-bottom: 75px;
 }
 
+/* ========================= Resume ============================== */
 
+#resume {
+	margin-top: 50px;
+	margin-bottom: 25px;
+	a, h1 {
+		transition: .5s;
+	}
+	> a {
+		color: $dark-green;
+		border: 4px solid #DDD;
+		padding: .5em 2em;
+		&:hover {
+			border-color: $dark-green;
+		}
+		h1 {
+			display: inline-block;
+		}
+	}
+	.header {
+		border: none;
+		padding: 30px 0 25px;
+		h1 {
+			line-height: 1em;
+		}
+	}
+	h2, h3, h4 {
+		font-weight: bold;
+		color: $dark-blue;
+	}
+	main {
+		display: none;
+	}
+	h3 {
+		font-size: 1.75em;
+		text-align: center;
+		margin: 1.5em 0 .75em
+	}
+	section {
+		text-align: left;
+		section {
+			margin-top: 2em;
+		}
+	}
+	p, section, ul {
+		margin: 1em 0;
+	}
+	strong {
+		font-weight: bold;
+	}
+	ul {
+		list-style: disc;
+		margin-left: 2em;
+	}
+	main > section {
+		max-width: 800px;
+		margin: auto;
+	}
+	@media screen and (min-width: 500px){
+		div {
+			display: inline-block;
+			width: 50%;
+			margin-right: -4px;
+			h4 {
+				text-align: center;
+			}
+		}
+	}
+}
 /* ========================= Projects ============================== */
 
 #project-display{
@@ -410,6 +496,8 @@ section.main {
 	transition: .5s;
 	cursor: pointer;
 	margin-bottom: 10px;
+	position: relative;
+	z-index: 250;
 	&:hover {
 		box-shadow: 0px 0px 2px 1px $dark-green;
 	}
@@ -441,14 +529,7 @@ section.main {
 		margin: 0 10px;
 		position: relative;
 		padding: 0 5px;
-		&:hover {
-			img {
-				transform: translateY(25px);
-			}
-			p {
-				opacity: 1;
-			}
-		}
+		box-sizing: border-box;
 		img {
 			position: relative;
 			height: 75px;
@@ -456,6 +537,7 @@ section.main {
 			transition: .5s;
 			z-index: 100;
 			background: white;
+			margin-top: 15px;
 		}
 		p {
 			position: absolute;
@@ -464,8 +546,24 @@ section.main {
 			right: 0;
 			z-index: 0;
 			font-weight: bold;
-			opacity: 0;
+			opacity: 1;
 			transition: .5s;
+		}
+		@media screen and (min-width: 450px){
+			img {
+				margin-top: 0px;
+			}
+			p {
+				opacity: 0;
+			}
+			&:hover {
+				img {
+					transform: translateY(25px);
+				}
+				p {
+					opacity: 1;
+				}
+			}
 		}
 	}
 }
@@ -519,8 +617,8 @@ section.main {
 			height: 100%;
 			width: auto;
 			z-index: 100;
-			opacity: 1;
-			transition: .5s;
+			opacity: .5;
+			transition: .4s;
 			border-radius: 50%;
 		}
 		h3 {
@@ -528,7 +626,6 @@ section.main {
 			position: relative;
 			margin-top: 85px;
 			z-index: 110;
-			opacity: 0;
 			transition: .5s;
 			font-family: $headings;
 		}
@@ -540,16 +637,27 @@ section.main {
 				opacity: 1;
 			}
 		}
+		@media screen and (min-width: 540px){
+			h3 {
+				opacity: 0;
+			}
+			img {
+				opacity: 1;
+			}
+			&:hover {
+				h3 {
+					opacity: 1;
+				}
+				img {
+					opacity: .25;
+				}
+			}
+		}
 	}
 	.active {
 		box-shadow: 0px 0px 5px 5px $dark-green;
 		transition: .5s;
 	}
-}
-
-@-webkit-keyframes wave {
-    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
-    20% { -webkit-transform: scaleY(1.0) }
 }
 
 @keyframes wave {
@@ -568,23 +676,23 @@ section.main {
 		display: inline-block;
 		position: relative;
 		margin-right: -4px;
-		padding: 1em 0;
+		padding: 1em 20px;
+		box-sizing: border-box;
 		p {
 			font-weight: bold;
 			position: absolute;
-			width: 100%;
+			left: 0;
+			right: 0;
 			opacity: 1;
 			transition: opacity .5s;
 			text-align: center;
 		}
 		img {
-			padding: 0 20px;
 			cursor: pointer;
 			transform: translateY(50px);
 			transition: transform .5s;
-			box-sizing: border-box;
 			max-width: 168px;
-			width: 100%;
+			width: auto;
 		}
 	}
 	#phone.up {

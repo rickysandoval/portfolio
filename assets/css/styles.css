@@ -29,17 +29,17 @@ body {
 p {
   margin-bottom: 1.75em; }
 
-p a {
+p a, li a {
   text-decoration: none;
   color: #6AA515;
   border-bottom: 1px dotted #6AA515;
   outline: none;
   -webkit-transition: .5s;
           transition: .5s; }
-  p a:hover {
+  p a:hover, li a:hover {
     border-bottom: 1px solid #6AA515; }
 
-header {
+header.header {
   font-family: "Josefin Bold"; }
 
 a {
@@ -147,25 +147,28 @@ a {
     -webkit-transition: .5s;
             transition: .5s; }
     .page-nav li:hover a {
-      line-height: 60px; }
+      line-height: 60px;
+      border-bottom: 0; }
     .page-nav li a {
       text-decoration: none;
       color: #354242;
       display: block;
       line-height: 50px;
       -webkit-transition: .5s;
-              transition: .5s; }
+              transition: .5s;
+      border-bottom: 0; }
 
 /* ===================== Main Sections ============================= */
 section.main {
   clear: both;
   text-align: center; }
-  section.main header {
+  section.main header, section.main .header {
+    display: block;
     padding-top: 30px;
     padding-bottom: 25px;
     background: #354242;
     border-bottom: 2px solid #6AA515; }
-    section.main header h1 {
+    section.main header h1, section.main .header h1 {
       color: white;
       font-size: 2.75em;
       display: inline-block;
@@ -173,13 +176,24 @@ section.main {
       padding: 5px 15px 10px;
       border-bottom: 5px solid #6AA515;
       -webkit-transition: .5s;
-              transition: .5s;
-      cursor: default; }
-      section.main header h1:hover {
+              transition: .5s; }
+      section.main header h1:hover, section.main .header h1:hover {
         padding: 5px 25px 10px; }
 
 .intro {
   margin-bottom: 0; }
+  .intro a {
+    border-bottom: none; }
+    .intro a:hover {
+      border-bottom: none; }
+  .intro img {
+    width: 1.2em;
+    vertical-align: middle;
+    border-radius: 50%; }
+    .intro img:hover {
+      box-shadow: 0px 0px 2px 2px #6AA515;
+      -webkit-transition: .5s;
+              transition: .5s; }
 
 .section-text {
   font-size: 1.25em;
@@ -212,10 +226,62 @@ section.main {
     padding: 0 5%;
     margin: auto;
     margin-top: 15px;
-    max-width: 875px; }
+    max-width: 875px;
+    text-align: left; }
 
 #contact {
   padding-bottom: 75px; }
+
+/* ========================= Resume ============================== */
+#resume {
+  margin-top: 50px;
+  margin-bottom: 25px; }
+  #resume a, #resume h1 {
+    -webkit-transition: .5s;
+            transition: .5s; }
+  #resume > a {
+    color: #6AA515;
+    border: 4px solid #DDD;
+    padding: .5em 2em; }
+    #resume > a:hover {
+      border-color: #6AA515; }
+    #resume > a h1 {
+      display: inline-block; }
+  #resume .header {
+    border: none;
+    padding: 30px 0 25px; }
+    #resume .header h1 {
+      line-height: 1em; }
+  #resume h2, #resume h3, #resume h4 {
+    font-weight: bold;
+    color: #354242; }
+  #resume main {
+    display: none; }
+  #resume h3 {
+    font-size: 1.75em;
+    text-align: center;
+    margin: 1.5em 0 0.75em; }
+  #resume section {
+    text-align: left; }
+    #resume section section {
+      margin-top: 2em; }
+  #resume p, #resume section, #resume ul {
+    margin: 1em 0; }
+  #resume strong {
+    font-weight: bold; }
+  #resume ul {
+    list-style: disc;
+    margin-left: 2em; }
+  #resume main > section {
+    max-width: 800px;
+    margin: auto; }
+  @media screen and (min-width: 500px) {
+    #resume div {
+      display: inline-block;
+      width: 50%;
+      margin-right: -4px; }
+      #resume div h4 {
+        text-align: center; } }
 
 /* ========================= Projects ============================== */
 #project-display {
@@ -356,6 +422,14 @@ section.main {
       -webkit-animation-delay: -0.8s;
               animation-delay: -0.8s; }
 
+@-webkit-keyframes wave {
+  0%, 40%, 100% {
+    -webkit-transform: scaleY(0.4);
+            transform: scaleY(0.4); }
+  20% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1); } }
+
 @keyframes wave {
   0%, 40%, 100% {
     -webkit-transform: scaleY(0.4);
@@ -373,7 +447,9 @@ section.main {
   -webkit-transition: .5s;
           transition: .5s;
   cursor: pointer;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 250; }
   .btn-switch:hover {
     box-shadow: 0px 0px 2px 1px #6AA515; }
   .btn-switch img {
@@ -398,13 +474,9 @@ section.main {
     display: none;
     margin: 0 10px;
     position: relative;
-    padding: 0 5px; }
-    .icons div:hover img {
-      -webkit-transform: translateY(25px);
-          -ms-transform: translateY(25px);
-              transform: translateY(25px); }
-    .icons div:hover p {
-      opacity: 1; }
+    padding: 0 5px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
     .icons div img {
       position: relative;
       height: 75px;
@@ -412,7 +484,8 @@ section.main {
       -webkit-transition: .5s;
               transition: .5s;
       z-index: 100;
-      background: white; }
+      background: white;
+      margin-top: 15px; }
     .icons div p {
       position: absolute;
       top: 0;
@@ -420,9 +493,20 @@ section.main {
       right: 0;
       z-index: 0;
       font-weight: bold;
-      opacity: 0;
+      opacity: 1;
       -webkit-transition: .5s;
               transition: .5s; }
+    @media screen and (min-width: 450px) {
+      .icons div img {
+        margin-top: 0px; }
+      .icons div p {
+        opacity: 0; }
+      .icons div:hover img {
+        -webkit-transform: translateY(25px);
+            -ms-transform: translateY(25px);
+                transform: translateY(25px); }
+      .icons div:hover p {
+        opacity: 1; } }
 
 .i-html #i-html {
   display: inline-block; }
@@ -473,16 +557,15 @@ section.main {
       height: 100%;
       width: auto;
       z-index: 100;
-      opacity: 1;
-      -webkit-transition: .5s;
-              transition: .5s;
+      opacity: .5;
+      -webkit-transition: .4s;
+              transition: .4s;
       border-radius: 50%; }
     #project-list article h3 {
       font-size: 2.125em;
       position: relative;
       margin-top: 85px;
       z-index: 110;
-      opacity: 0;
       -webkit-transition: .5s;
               transition: .5s;
       font-family: "Josefin Bold"; }
@@ -490,16 +573,20 @@ section.main {
       opacity: .25; }
     #project-list article:hover h3 {
       opacity: 1; }
+    @media screen and (min-width: 540px) {
+      #project-list article h3 {
+        opacity: 0; }
+      #project-list article img {
+        opacity: 1; }
+      #project-list article:hover h3 {
+        opacity: 1; }
+      #project-list article:hover img {
+        opacity: .25; } }
   #project-list .active {
     box-shadow: 0px 0px 5px 5px #6AA515;
     -webkit-transition: .5s;
             transition: .5s; }
 
-@-webkit-keyframes wave {
-  0%, 40%, 100% {
-    -webkit-transform: scaleY(0.4); }
-  20% {
-    -webkit-transform: scaleY(1); } }
 @keyframes wave {
   0%, 40%, 100% {
     -webkit-transform: scaleY(0.4);
@@ -516,27 +603,27 @@ section.main {
     display: inline-block;
     position: relative;
     margin-right: -4px;
-    padding: 1em 0; }
+    padding: 1em 20px;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box; }
     #contact_buttons div p {
       font-weight: bold;
       position: absolute;
-      width: 100%;
+      left: 0;
+      right: 0;
       opacity: 1;
       -webkit-transition: opacity .5s;
               transition: opacity .5s;
       text-align: center; }
     #contact_buttons div img {
-      padding: 0 20px;
       cursor: pointer;
       -webkit-transform: translateY(50px);
           -ms-transform: translateY(50px);
               transform: translateY(50px);
       -webkit-transition: -webkit-transform .5s;
               transition: transform .5s;
-      -moz-box-sizing: border-box;
-           box-sizing: border-box;
       max-width: 168px;
-      width: 100%; }
+      width: auto; }
   #contact_buttons #phone.up img:hover {
     -webkit-animation: 1.75s ring linear infinite;
             animation: 1.75s ring linear infinite; }
@@ -841,11 +928,13 @@ footer {
     padding-bottom: 25px; }
 
   .brand {
-    font-size: 2.5em; }
+    font-size: 2.25em; }
+
+  .page-nav {
+    font-size: 1.25em; }
 
   .page-nav li {
-    width: 85px a;
-      width-font-size: 1em; } }
+    width: 85px; } }
 @media only screen and (max-width: 480px) {
   .brand .small .brand-symbol {
     color: #6AA515; }
@@ -853,11 +942,6 @@ footer {
   .icons div {
     margin: 0;
     margin-bottom: 15px; }
-    .icons div:hover img {
-      -webkit-transform: none;
-          -ms-transform: none;
-              transform: none;
-      width: auto; }
     .icons div p {
       position: relative;
       margin-bottom: 2px; }

@@ -147,6 +147,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/pics\/icons\/github.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1539,
+		"inputAbbreviatedPath": "\/pics\/icons\/github.png",
+		"outputAbbreviatedPath": "\/pics\/icons\/github.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/pics\/icons\/html5.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -278,149 +289,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.43.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 398544,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.43.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.43.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.54.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 381064,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.54.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.54.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.57.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 157891,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.57.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.10.57.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 420319,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.03.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.03.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.07.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 361236,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.07.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.07.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.13.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 220719,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.13.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.13.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.46.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 332303,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.46.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.46.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.52.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 529829,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.52.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.52.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.56.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 221836,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.56.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.11.56.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.05.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 162956,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.05.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.05.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.11.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 149679,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.11.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.11.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.14.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 143068,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.14.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.14.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.18.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 166999,
-		"inputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.18.png",
-		"outputAbbreviatedPath": "\/pics\/screenshots\/Camera Uploads\/2015-01-14 06.12.18.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/pics\/screenshots\/drawing_about_full.png": {
 		"fileType": 32768,
@@ -817,6 +685,18 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [

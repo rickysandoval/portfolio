@@ -33,15 +33,96 @@
 					at home with a guitar in my hands.</p>
 					<p class="long">If you'd like to know more about me or want to chat, you can message me <a href="#contact" class="smooth">here</a>!</p>
 				</div>
+				<div id="resume">
+						<a href="#" class="toggle"><h1>Resume</h1></a>
+					<main>
+					<section class="contain">
+						<h3>My Toolkit</h3>
+						<div>
+							<h4>Laguages & Libraries</h4>
+							<ul>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>jQuery</li>
+								<li>JavaScript</li>
+								<li>PHP</li>
+							</ul>
+						</div>
+						<div>
+							<h4>Workflow Tools</h4>
+							<ul>
+								<li>CodeKit</li>
+								<li>SublimeText</li>
+								<li>SASS</li>
+								<li>Git & Github</li>
+								<li>Concrete5</li>
+							</ul>
+						</div>
+					</section>
+					<section class="contain">
+						<h3>Academics</h3>
+						<p><strong>Cornell University</strong> - Ithaca, NY<br>
+						Bachelor of Arts, Information Science<br>
+						Graduated May, 2014
+						Cumulative GPA: 3.33</p>
+						<p>Sample Coursework:</p>
+						<ul>
+							<li>Design and Programming for the Web</li>
+							<li>Object-Oriented Programming</li>
+							<li>Data Driven Web Applications</li>
+							<li>Ubiquitous Computing</li>
+							<li>New Media and Society</li>
+						</ul>
+					</section>
+					<section class="contain">
+						<h3>Work Experience</h3>
+						<section>
+							<h4>Artisan Rug Gallery - Crested Butte, CO</h4>
+							<p>Web Developer/Manager <span>November 2013- Agugust 2014</span></p>
+							<ul>
+								<li>Configured and customized an Ecommerce website on the LightSpeed Webstore platform.</li>
+								<li>Taught coworkers details of site management system together with the inventory software.</li>
+								<li>Created custom pages and redesigned site theme.</li>
+								<li>Fixed responsive functionality.</li>
+								<li><a href="http://shop.artisanruggallery.com">View site</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>The JTA Group - Denver, CO</h4>
+							<p>Web Development Intern <span>November 2014 - Present</span></p>
+							<ul>
+								<li>Recreated and customized existing theme for use on the Concrete5 CMS.</li>
+								<li>Design and development work on various projects, acting as lead developer and working with fellow intern.</li>
+							</ul>
+						</section>
+						<section>
+							<h4>West Elk Soccer Association - Crested Butte, CO</h4>
+							<p>Freelance Web Developer<span>October 2014 - January 2015</span></p>
+							<ul>
+								<li>Created a custom website on the Drupal7 CMS.</li>
+								<li>Trained client on managing website.</li>
+							</ul>
+						</section>
+						<section>
+							<h4>Quaking Aspen Outfitters - Crested Butte, CO</h4>
+							<p>Freelance Web Developer<span>January 2015 - Present</span></p>
+							<ul>
+								<li>Created a custom website using Concrete5 CMS</li>
+								<li>Rewrote and reorganized content from old website.</li>
+							</ul>
+						</section>
+					</section>
+					</main>
+				</div>
 			</div>
 		</section><!-- End about -->
 
 		<section id="work" class="main">
 			<header class="contain">
-				<h1>Past Projects</h1>
+				<h1>My Work</h1>
 			</header>
 			<div class="section-text contain">
-				<p class="intro">Here are some of the projects I've completed in the past year. I hope to be adding more to this very soon.</p>
+				<p class="intro">Here are some of the projects I've completed in the past year. I hope to be adding more to this very soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> <a href="http://codepen.io/rickysandoval/"><img src="pics/icons/codepen.png"></a></p>
 			</div>
 			<section id="project-display" class="hidden">
 				<div class="project-display-title">

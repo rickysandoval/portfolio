@@ -145,66 +145,7 @@ $(document).ready(function() {
 			$('#toTop').toggleClass('small', $(window).scrollTop() > almostTop);
 		});
 
-		// Contact button animations
-		function ring(targetElement, speed, times) {
-			if (times <= 0){ return; } 
-			else{
-				$(targetElement).animate({ top: '-5px'}, speed, function (){
-           			$(targetElement).animate({ top: '0px' }, speed, function(){
-           				ring(targetElement, speed, times-1);
-           			});
-        		});
-			}
-		}
-		function bump(targetElement, speed) {
-			$(targetElement).animate({ top: '-10px'}, speed/4, function (){
-           		$(targetElement).animate({ top: '0px' }, speed );
-        	});
-		}
-		function hover(targetElement, speed) {
-			$(targetElement).animate({ top: '-15px'}, speed, function (){
-           		$(targetElement).animate({ top: '-5px' }, speed );
-        	});
-		}
-		var intervalPhone = null;
-		var intervalMail = null;
-		var intervalLinked = null;
 
-		function createInterval(f,p1,p2,p3,interval){
-			return setInterval(function() {
-				f(p1,p2,p3);
-			}, interval);
-		}
-/*
-	--First version of animations, done in JS instead of css--
-
-		$('#phone img').hover(function() {
-			$(this).stop();
-			ring($(this), 50, 5);
-			intervalPhone = createInterval(ring, $(this), 50, 5, 2000);
-		},function(){
-			$(this).stop();
-			clearInterval(intervalPhone);
-		});
-
-		$('#email img').hover(function() {
-			$(this).stop();
-			bump($(this), 1000);
-			intervalMail = window.setInterval(function(){ bump($('#email img'), 1000); }, 1250);
-		}, function() {
-			window.clearInterval(intervalMail);
-		});
-
-		$('#linkedin img').hover(function() {
-			$(this).stop();
-			hover($(this), 500);
-			intervalLinked = window.setInterval(function(){ hover($('#linkedin img'), 500); }, 1000);
-		}, function() {
-			$(this).stop().animate({top: '0px'});
-			window.clearInterval(intervalLinked);
-		});
-
-*/
 		$('#linkedin, #phone').click(function(){
 			$(this).toggleClass('up');
 		});
@@ -218,6 +159,13 @@ $(document).ready(function() {
 
 				}
 			});
+		});
+
+		$('#resume .toggle').click(function(){
+			$('#resume main').slideToggle('slow', function(){
+				$('#resume .toggle').toggleClass('header');
+			});
+			return false;
 		});
 
 });

@@ -146,13 +146,13 @@
 		padding-bottom: 25px;
 	}
 	.brand {
-		font-size: 2.5em;
+		font-size: 2.25em;
+	}
+	.page-nav {
+		font-size: 1.25em;
 	}
 	.page-nav li {
 		width: 85px
-		a {
-			font-size: 1em;
-		}
 	}
 }
 
@@ -164,12 +164,6 @@
 		div {
 			margin: 0;
 			margin-bottom: 15px;
-			&:hover {
-				img {
-					transform: none;
-					width: auto;
-				}
-			}
 
 			p {
 				position: relative;
