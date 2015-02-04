@@ -1,12 +1,10 @@
 /** Colors **/
 /** Fonts **/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 @font-face {
   font-family: 'Josefin Bold';
   src: url("JosefinSans-Bold.ttf") format("truetype"); }
-@font-face {
-  font-family: 'Cinzel Regular';
-  src: url("Cinzel-Regular.ttf") format("truetype"); }
 /* ================= Document Standards ===================== */
 html {
   font-size: 16px; }
@@ -19,7 +17,7 @@ body {
   font-size: 100%;
   font-family: sans-serif;
   color: #354242;
-  font-family: 'Open Sans'; }
+  font-family: "PT Sans"; }
 
 .contain {
   width: 85%;
@@ -39,7 +37,7 @@ p a, li a {
   p a:hover, li a:hover {
     border-bottom: 1px solid #6AA515; }
 
-header.header {
+header {
   font-family: "Josefin Bold"; }
 
 a {
@@ -130,7 +128,8 @@ a {
   top: 0;
   bottom: 0;
   right: 0;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  height: 100%; }
   .page-nav li {
     float: right;
     position: relative;
@@ -202,8 +201,7 @@ section.main {
 .intro {
   font-size: 1.3em;
   line-height: 1.5em;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
   padding: 50px 20%;
   background: white; }
 
@@ -217,8 +215,7 @@ section.main {
   #about #me {
     max-width: 400px;
     width: 90%;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box;
+    box-sizing: border-box;
     margin: 35px 5% 15px;
     text-align: left;
     border-bottom: 1px solid #354242; }
@@ -422,11 +419,11 @@ section.main {
       -webkit-animation-delay: -0.8s;
               animation-delay: -0.8s; }
 
-@-webkit-keyframes wave {
-  0%, 40%, 100% {
+@-webkit-keyframes wave{
+  0%, 40%, 100%{
     -webkit-transform: scaleY(0.4);
             transform: scaleY(0.4); }
-  20% {
+  20%{
     -webkit-transform: scaleY(1);
             transform: scaleY(1); } }
 
@@ -475,8 +472,7 @@ section.main {
     margin: 0 10px;
     position: relative;
     padding: 0 5px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box; }
+    box-sizing: border-box; }
     .icons div img {
       position: relative;
       height: 75px;
@@ -604,8 +600,7 @@ section.main {
     position: relative;
     margin-right: -4px;
     padding: 1em 20px;
-    -moz-box-sizing: border-box;
-         box-sizing: border-box; }
+    box-sizing: border-box; }
     #contact_buttons div p {
       font-weight: bold;
       position: absolute;
@@ -640,44 +635,44 @@ section.main {
         -ms-transform: none;
             transform: none; }
 
-@-webkit-keyframes ring {
-  0% {
+@-webkit-keyframes ring{
+  0%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  3% {
+  3%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  6% {
+  6%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  9% {
+  9%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  12% {
+  12%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  15% {
+  15%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  18% {
+  18%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  21% {
+  21%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  24% {
+  24%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  27% {
+  27%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  30% {
+  30%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  33% {
+  33%{
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); }
-  36% {
+  36%{
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
@@ -721,11 +716,11 @@ section.main {
   36% {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
-@-webkit-keyframes floating {
-  25% {
+@-webkit-keyframes floating{
+  25%{
     -webkit-transform: translateY(40px);
             transform: translateY(40px); }
-  100% {
+  100%{
     -webkit-transform: translateY(50px);
             transform: translateY(50px); } }
 @keyframes floating {
@@ -735,14 +730,14 @@ section.main {
   100% {
     -webkit-transform: translateY(50px);
             transform: translateY(50px); } }
-@-webkit-keyframes bounce {
-  0% {
+@-webkit-keyframes bounce{
+  0%{
     -webkit-transform: translateY(0);
             transform: translateY(0); }
-  50% {
+  50%{
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px); }
-  100% {
+  100%{
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 @keyframes bounce {
@@ -765,7 +760,7 @@ section.main {
   #email_form form {
     font-size: 1.25em; }
     #email_form form input, #email_form form textarea {
-      font-family: "Open Sans";
+      font-family: "PT Sans";
       font-size: 1em;
       width: 50%;
       border: 2px solid #354242;

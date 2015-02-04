@@ -10,15 +10,13 @@ $dark-blue: #354242;
 	src: url('JosefinSans-Bold.ttf') format('truetype');
 	
 }
-@font-face {
-	font-family: 'Cinzel Regular';
-	src: url('Cinzel-Regular.ttf') format('truetype');
-}
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
 $headings: 'Josefin Bold';
-$text: 'Open Sans';
-$Cinzel: 'Cinzel Regular';
+$text: 'PT Sans';
+
 
 
 /* ================= Document Standards ===================== */
@@ -33,7 +31,7 @@ body {
 	font-size: 100%;
 	font-family: sans-serif;
 	color: $dark-blue;
-	font-family: 'Open Sans';
+	font-family: $text;
 }
 .contain {
 	width: 85%;
@@ -55,7 +53,7 @@ p a, li a {
 		border-bottom: 1px solid $dark-green;
 	}
 }
-header.header {
+header {
 	font-family: $headings;
 }
 a {
@@ -154,6 +152,7 @@ a {
 	bottom: 0;
 	right: 0;
 	font-size: 1.5em;
+	height: 100%;
 	li {
 		float: right;
 		position: relative;

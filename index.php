@@ -10,7 +10,8 @@
 	<div id="page">
 		<header class="page-header contain">
 			<nav>
-				<h1 class="brand"><a href="#page" id="toTop" class="smooth"><span class="brand-symbol">[</span> <span class="brand-name">Ricky Sandoval</span> <span class="brand-symbol">]</span></a></h1>
+				<h1 class="brand"><a href="#page" id="toTop" class="smooth"><span class="brand-symbol">[</span> 
+				<span class="brand-name">Ricky Sandoval</span> <span class="brand-symbol">]</span></a></h1>
 				<ul class="page-nav">
 					<li><a href="#contact" class="smooth nav">Contact</a></li>
 					<li><a href="#work" class="smooth nav">Work</a></li>
@@ -122,7 +123,9 @@
 				<h1>My Work</h1>
 			</header>
 			<div class="section-text contain">
-				<p class="intro">Here are some of the projects I've completed in the past year. I hope to be adding more to this very soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> <a href="http://codepen.io/rickysandoval/"><img src="pics/icons/codepen.png"></a></p>
+				<p class="intro">Here are some of the projects I've completed in the past year. I hope to be adding more to 
+				this very soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> 
+				<a href="http://codepen.io/rickysandoval/"><img src="pics/icons/codepen.png"></a></p>
 			</div>
 			<section id="project-display" class="hidden">
 				<div class="project-display-title">
@@ -226,6 +229,23 @@
 						 of the rugs do bring the life.</p>
 						 <p>
 							<a href="http://shop.artisanruggallery.com">Full Site</a>
+						</p>
+					</div>
+				</article>
+				<article id="models"
+					data-title="JTA Models"
+					data-image-large="pics/screenshots/models.jpg"
+					data-image-mobile="pics/screenshots/models_mobile.jpg"
+					data-icons="i-html i-css i-mobile i-jquery i-concrete">
+					<a href="#project-display" ></a>
+					<h3>JTA Models</h3>
+					<img src="pics/screenshots/models_circle.jpg">
+					<div class="project-info">
+						<p>I developed a reusable template for The JTA Group in Denver, CO specifically
+						geared towards individual portoflio sites for models. It features some custom
+						gallery functionalites and a responsive design.</p>
+						<p>
+						<a href="http://www.coloradofashionwee.co/bianco_c5/">Example Site</a>
 						</p>
 					</div>
 				</article>
