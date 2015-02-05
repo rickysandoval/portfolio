@@ -245,7 +245,7 @@
 						geared towards individual portoflio sites for models. It features some custom
 						gallery functionalites and a responsive design.</p>
 						<p>
-						<a href="http://www.coloradofashionwee.co/bianco_c5/">Example Site</a>
+						<a href="http://www.coloradofashionweek.co/bianca_c5/">Example Site</a>
 						</p>
 					</div>
 				</article>
