@@ -311,6 +311,9 @@ section.main {
 		section {
 			margin-top: 2em;
 		}
+		span {
+			float: right;
+		}
 	}
 	p, section, ul {
 		margin: 1em 0;
@@ -325,6 +328,16 @@ section.main {
 	main > section {
 		max-width: 800px;
 		margin: auto;
+	}
+	@media screen and (max-width: 500px){
+		font-size: .875em;
+		section span {
+			float: none;
+			display: block;
+		}
+		section section {
+			margin-top: 3em;
+		}
 	}
 	@media screen and (min-width: 500px){
 		div {

@@ -262,6 +262,8 @@ section.main {
     text-align: left; }
     #resume section section {
       margin-top: 2em; }
+    #resume section span {
+      float: right; }
   #resume p, #resume section, #resume ul {
     margin: 1em 0; }
   #resume strong {
@@ -272,6 +274,14 @@ section.main {
   #resume main > section {
     max-width: 800px;
     margin: auto; }
+  @media screen and (max-width: 500px) {
+    #resume {
+      font-size: .875em; }
+      #resume section span {
+        float: none;
+        display: block; }
+      #resume section section {
+        margin-top: 3em; } }
   @media screen and (min-width: 500px) {
     #resume div {
       display: inline-block;
