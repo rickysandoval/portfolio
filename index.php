@@ -100,7 +100,7 @@
 							<h4>West Elk Soccer Association - Crested Butte, CO</h4>
 							<p>Freelance Web Developer<span>October 2014 - January 2015</span></p>
 							<ul>
-								<li>Created a custom website on the Drupal7 CMS.</li>
+								<li>Created a custom website on the Drupal6 CMS.</li>
 								<li>Trained client on managing website.</li>
 							</ul>
 						</section>
@@ -123,8 +123,7 @@
 				<h1>My Work</h1>
 			</header>
 			<div class="section-text contain">
-				<p class="intro">Here are some of the projects I've completed in the past year. I hope to be adding more to 
-				this very soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> 
+				<p class="intro">Here are some of the projects I've completed in the past year. More to come soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> 
 				<a href="http://codepen.io/rickysandoval/"><img src="pics/icons/codepen.png"></a></p>
 			</div>
 			<section id="project-display" class="hidden">
@@ -172,6 +171,7 @@
 						<div id="i-jquery"><p>jQuery</p><img src="pics/icons/jquery.png"></div>
 						<div id="i-mobile"><p>Mobile</p><img src="pics/icons/mobile.png"></div>
 						<div id="i-concrete"><p>Concrete5</p><img src="pics/icons/concrete.png"></div>
+						<div id="i-drupal"><p>Drupal6</p><img src="pics/icons/drupal.png"></div>
 					</div>
 				</div>
 			</section>
@@ -246,6 +246,21 @@
 						gallery functionalites and a responsive design.</p>
 						<p>
 						<a href="http://www.coloradofashionweek.co/bianca_c5/">Example Site</a>
+						</p>
+					</div>
+				</article>
+				<article id="rugs"
+					data-title="West Elk Soccer Association"
+					data-image-large="pics/screenshots/wesa.jpg"
+					data-image-mobile="pics/screenshots/wesa_mobile.jpg"
+					data-icons="i-html i-css i-jquery i-mobile i-drupal">
+					<a href="#project-display"></a>
+					<img src="pics/screenshots/wesa_circle.png">
+					<h3>West Elk Soccer Association</h3>
+					<div class="project-info">
+						<p>I did this website for one of the local kids soccer oranizations. It's build on the Drupal6 CMS.</p>
+						 <p>
+							<a href="http://westelksoccer.org">Full Site</a>
 						</p>
 					</div>
 				</article>

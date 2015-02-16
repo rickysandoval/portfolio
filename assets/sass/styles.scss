@@ -579,19 +579,12 @@ section.main {
 		}
 	}
 }
-.i-html #i-html {
-	display: inline-block;
-}
-.i-css #i-css {
-	display: inline-block;
-}
-.i-jquery #i-jquery {
-	display: inline-block;
-}
-.i-mobile #i-mobile {
-	display: inline-block;
-}
-.i-concrete #i-concrete {
+.i-html #i-html,
+.i-css #i-css,
+.i-jquery #i-jquery,
+.i-mobile #i-mobile,
+.i-concrete #i-concrete,
+.i-drupal #i-drupal,{
 	display: inline-block;
 }
 
@@ -827,7 +820,10 @@ section.main {
 			font-size: 1em;
 			border-radius: 5px;
 			box-shadow: 0px 2px 0px 1px;
-			transition: 1s;
+			transition: .2s;
+			&:hover {
+				background: url(../../pics/fabric.png);
+			}
 			&:active {
 				box-shadow: 0px 1px 0px 1px;
 				transform: translateY(2px);
