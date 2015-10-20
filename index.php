@@ -197,7 +197,7 @@
 						<p>I built a color picker tool as a practice project for learning React/Flux. It also builds the 
 						color wheel on the go with html5 canvas.</p>
 						<p>
-						<a href="http://rickysandoval.github.io/colorpane/">Example Site</a>
+						<a href="http://rickysandoval.github.io/colorpane/">View Site</a>
 						</p>
 					</div>
 				</article>
