@@ -3,5 +3,4 @@ cgi-bin
 config.codekit
 error_log
 .DS_Store
-./**/.DS_Store
 assets/sass/.sass-cache
