@@ -4,4 +4,4 @@ config.codekit
 error_log
 .DS_Store
 ./**/.DS_Store
-ass
+assets/sass/.sass-cache
