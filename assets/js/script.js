@@ -82,6 +82,12 @@ $(document).ready(function() {
 			var imgMob = $(this).parent().data('image-mobile');
 			var title = $(this).parent().data('title');
 			var icons = $(this).parent().data('icons');
+			var picSwitch = $(this).parent().data('switch');
+			if (picSwitch === false) {
+				$('#project-display').addClass('noswitch');
+			} else {
+				$('#project-display').removeClass('noswitch');
+			}
 
 			var newImgLrg = new Image();
 			var newImgMob = new Image();

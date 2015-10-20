@@ -59,6 +59,9 @@ header {
 a {
 	outline: none;
 }
+.strike {
+	text-decoration: line-through;
+}
 .clear {
 	&:after {
 		content: " ";
@@ -498,6 +501,9 @@ section.main {
     0%, 40%, 100% { transform: scaleY(0.4); }
     20% { transform: scaleY(1.0); }
 }
+.noswitch .btn-switch {
+	display: none;
+}
 .btn-switch {
 	display: inline-block;
 	background: url('../../pics/switch_bg.png');
@@ -584,7 +590,8 @@ section.main {
 .i-jquery #i-jquery,
 .i-mobile #i-mobile,
 .i-concrete #i-concrete,
-.i-drupal #i-drupal,{
+.i-drupal #i-drupal,
+.i-react #i-react{
 	display: inline-block;
 }
 
@@ -618,7 +625,7 @@ section.main {
 		img {
 			position: absolute;
 			top: 0;
-			right: 0;
+			left: 0;
 			height: 100%;
 			width: auto;
 			z-index: 100;

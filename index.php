@@ -24,18 +24,17 @@
 				<h1>About Me</h1>
 			</header>
 			<div class="section-text clear">
-				<p class="intro">Hello! My name is Ricky Sandoval and I'm a front-end web developer currently working out of Crested Butte, Colorado.</p>
+				<p class="intro">Hello! My name is Ricky Sandoval and I'm a web developer currently working out of <span class="strike">Crested Butte</span> Golden, Colorado.</p>
 				<div class="contain">
 					<img id="me" src="pics/me.png">
 					<p class="long">I like to make websites! Beyond that, I believe in the beauty of
 					simplicity, both in design and in writing code. I make intuitive, user-centered sites with a creative voice.</p>
-					<p class="long">I'm currently living in the mountains, working on a variety of design/developent
-					projects and enjoying the snow in my spare time. When I'm not writing code you can find me on the side of a mountain or
+					<p class="long">I'm currently living in Denver, working full time as a front-end dev. When I'm not writing code you can find me on the side of a mountain or
 					at home with a guitar in my hands.</p>
 					<p class="long">If you'd like to know more about me or want to chat, you can message me <a href="#contact" class="smooth">here</a>!</p>
 				</div>
 				<div id="resume">
-						<a href="#" class="toggle"><h1>Resume</h1></a>
+						<a href="#" class="toggle"><h1>Résumé</h1></a>
 					<main>
 					<section class="contain">
 						<h3>My Toolkit</h3>
@@ -44,6 +43,7 @@
 							<ul>
 								<li>HTML5</li>
 								<li>CSS3</li>
+								<li>AngularJS</li>
 								<li>jQuery</li>
 								<li>JavaScript</li>
 								<li>PHP</li>
@@ -56,6 +56,7 @@
 								<li>SublimeText</li>
 								<li>SASS</li>
 								<li>Git & Github</li>
+								<li>Grunt</li>
 								<li>Concrete5</li>
 							</ul>
 						</div>
@@ -78,8 +79,14 @@
 					<section class="contain">
 						<h3>Work Experience</h3>
 						<section>
+							<h4>Arrow Electronics - Golden, CO</h4>
+							<p>Web Developer <span>April 2015 - Present</span></p>
+							<p>As of March 30th, 2015 I am proudly a employee of Arrow Electronics, working out of
+							Golden with the Verical.com team.</p>
+						</section>
+						<section>
 							<h4>Artisan Rug Gallery - Crested Butte, CO</h4>
-							<p>Web Developer/Manager <span>November 2013- Agugust 2014</span></p>
+							<p>Web Developer/Manager <span>November 2013 - Agugust 2014</span></p>
 							<ul>
 								<li>Configured and customized an Ecommerce website on the LightSpeed Webstore platform.</li>
 								<li>Taught coworkers details of site management system together with the inventory software.</li>
@@ -90,7 +97,7 @@
 						</section>
 						<section>
 							<h4>The JTA Group - Denver, CO</h4>
-							<p>Web Development Intern <span>November 2014 - Present</span></p>
+							<p>Web Development Intern <span>November 2014 - February 2015</span></p>
 							<ul>
 								<li>Recreated and customized existing theme for use on the Concrete5 CMS.</li>
 								<li>Design and development work on various projects, acting as lead developer and working with fellow intern.</li>
@@ -106,7 +113,7 @@
 						</section>
 						<section>
 							<h4>Quaking Aspen Outfitters - Crested Butte, CO</h4>
-							<p>Freelance Web Developer<span>January 2015 - Present</span></p>
+							<p>Freelance Web Developer<span>January 2015 - March 2015</span></p>
 							<ul>
 								<li>Created a custom website using Concrete5 CMS</li>
 								<li>Rewrote and reorganized content from old website.</li>
@@ -123,7 +130,7 @@
 				<h1>My Work</h1>
 			</header>
 			<div class="section-text contain">
-				<p class="intro">Here are some of the projects I've completed in the past year. More to come soon.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> 
+				<p class="intro">Here are some of the projects I've completed in the past.<br>Also: <a href="https://github.com/rickysandoval"><img src="pics/icons/github.png"></a> 
 				<a href="http://codepen.io/rickysandoval/"><img src="pics/icons/codepen.png"></a></p>
 			</div>
 			<section id="project-display" class="hidden">
@@ -172,10 +179,28 @@
 						<div id="i-mobile"><p>Mobile</p><img src="pics/icons/mobile.png"></div>
 						<div id="i-concrete"><p>Concrete5</p><img src="pics/icons/concrete.png"></div>
 						<div id="i-drupal"><p>Drupal6</p><img src="pics/icons/drupal.png"></div>
+						<div id="i-react"><p>ReactJS</p><img src="pics/icons/react.png"></div>
 					</div>
 				</div>
 			</section>
 			<section id="project-list">
+				<article id="colored"
+					data-title="Color Pane"
+					data-image-large="pics/screenshots/colored.png"
+					data-image-mobile="pics/screenshots/colored_mobile.png"
+					data-icons="i-html i-css i-react"
+					data-switch="false">
+					<a href="#project-display" ></a>
+					<h3>Color Pane</h3>
+					<img src="pics/screenshots/color_circle.png">
+					<div class="project-info">
+						<p>I built a color picker tool as a practice project for learning React/Flux. It also builds the 
+						color wheel on the go with html5 canvas.</p>
+						<p>
+						<a href="http://rickysandoval.github.io/colorpane/">Example Site</a>
+						</p>
+					</div>
+				</article>
 				<article id="quaking"
 					data-title="Quaking Aspen Outfitters"
 					data-image-large="pics/screenshots/quaking.jpg"
@@ -229,23 +254,6 @@
 						 of the rugs do bring the life.</p>
 						 <p>
 							<a href="http://shop.artisanruggallery.com">Full Site</a>
-						</p>
-					</div>
-				</article>
-				<article id="models"
-					data-title="JTA Models"
-					data-image-large="pics/screenshots/models.jpg"
-					data-image-mobile="pics/screenshots/models_mobile.jpg"
-					data-icons="i-html i-css i-mobile i-jquery i-concrete">
-					<a href="#project-display" ></a>
-					<h3>JTA Models</h3>
-					<img src="pics/screenshots/models_circle.jpg">
-					<div class="project-info">
-						<p>I developed a reusable template for The JTA Group in Denver, CO specifically
-						geared towards individual portoflio sites for models. It features some custom
-						gallery functionalites and a responsive design.</p>
-						<p>
-						<a href="http://www.coloradofashionweek.co/bianca_c5/">Example Site</a>
 						</p>
 					</div>
 				</article>
